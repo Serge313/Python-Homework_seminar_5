@@ -6,12 +6,12 @@ import sys
 
 
 def recursion_pow(number, power_to_raise):
+    """The method raises number to power using recursion"""
     if power_to_raise == 0:
         return 1
     if power_to_raise == 1:
         return number
-    else:
-        return number * recursion_pow(number, power_to_raise - 1)
+    return number * recursion_pow(number, power_to_raise - 1)
 
 
 def testing_recursion_pow(test_num=3, test_pow=5):
